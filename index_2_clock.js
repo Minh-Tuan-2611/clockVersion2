@@ -24,8 +24,10 @@ class Clock {
             btnStartAll.onclick = () => {
 
             }
-            this.checkStart = true;
-            this.start();
+            if (this.checkStart == false) {
+                this.checkStart = true;
+                this.start();
+            }
         });
 
         this.$btnPause = document.createElement('button');
